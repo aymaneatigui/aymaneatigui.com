@@ -1,18 +1,99 @@
-# AWS for Frontend Engineers
+# Aymane Atigui Personal Website
 
-- [00 - Introduction](content/00%20-%20Introduction.md)
-- [01 - The AWS Free Tier](content/01%20-%20The%20AWS%20Free%20Tier.md)
-- [02 - Account Set Up](content/02%20-%20Account%20Set%20Up.md)
-- [03 - Billing](content/03%20-%20Billing.md)
-- [04 - IAM](content/04%20-%20IAM.md)
-- [05 - S3](content/05%20-%20S3.md)
-- [06 - Registering a Domain Name](content/06%20-%20Registering%20a%20Domain%20Name.md)
-- [07 - S3 Policies](content/07%20-%20S3%20Policies.md)
-- [08 - AWS CLI](content/08%20-%20AWS%20CLI.md)
-- [09 - Route 53](content/09%20-%20Route%2053.md)
-- [10 - Routing](content/10%20-%20Routing.md)
-- [11 - CloudFront](content/11%20-%20CloudFront.md)
-- [12 - Using OAI](content/12%20-%20Using%20OAI.md)
-- [13 - Creating a Custom Cache Policy](content/13%20-%20Creating%20a%20Custom%20Cache%20Policy.md)
-- [14 - Build Pipeline](content/14%20-%20Build%20Pipeline.md)
-- [15 - Lambda@Edge](content/15%20-%20Lambda@Edge.md)
+A modern, responsive static website built with HTML, CSS, and JavaScript. Perfect for testing static hosting services and routing functionality.
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+# Start development server
+npm run dev
+
+# This will start a live server on http://localhost:3000
+```
+
+### Building for Production
+```bash
+# Build the project
+npm run build
+
+# This creates an optimized build in the 'build' folder
+```
+
+### Preview Production Build
+```bash
+# Preview the built website
+npm run preview
+
+# This serves the build folder on http://localhost:8080
+```
+
+## 📁 Project Structure
+
+```
+├── index.html          # Home page
+├── about.html          # About page
+├── projects.html       # Projects page
+├── contact.html        # Contact page
+├── styles.css          # Main stylesheet
+├── script.js           # JavaScript functionality
+├── package.json        # Project configuration
+└── build/              # Production build output
+```
+
+## 🛠 Available Scripts
+
+- `npm start` or `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run clean` - Clean build directory
+- `npm run lint` - Lint JavaScript files
+- `npm run lint:fix` - Fix linting issues
+- `npm run format` - Format code with Prettier
+- `npm run validate` - Validate HTML files
+
+## 🌐 Pages
+
+- **Home** (`index.html`) - Landing page with navigation
+- **About** (`about.html`) - Personal information and skills
+- **Projects** (`projects.html`) - Portfolio showcase
+- **Contact** (`contact.html`) - Contact form and information
+
+## ✨ Features
+
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Modern CSS with gradients and animations
+- ✅ Interactive JavaScript functionality
+- ✅ Mobile-friendly hamburger menu
+- ✅ Form validation
+- ✅ Cross-page navigation
+- ✅ SEO-friendly structure
+- ✅ Production-ready build process
+
+## 🚀 Deployment
+
+After running `npm run build`, the `build` folder contains all optimized files ready for deployment to:
+
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static hosting service
+
+## 📝 License
+
+MIT License - feel free to use this project as a template for your own website!
+
+## 👨‍💻 Author
+
+**Aymane Atigui**
+- Website: [aymaneatigui.com](https://aymaneatigui.com)
+- GitHub: [@aymaneatigui](https://github.com/aymaneatigui)

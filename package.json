@@ -1,46 +1,64 @@
 {
-  "name": "aws-for-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.1.1",
-    "react-scripts": "next",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "aymaneatigui.com",
+  "version": "1.0.0",
+  "description": "Personal website for Aymane Atigui - A static website for testing routing and deployment",
+  "main": "index.html",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npm run clean && npm run copy-files && npm run minify",
+    "clean": "rimraf build",
+    "copy-files": "npm run copy-html && npm run copy-css && npm run copy-js && npm run copy-assets && npm run copy-static",
+    "copy-html": "cpx \"*.html\" build/",
+    "copy-css": "cpx \"*.css\" build/",
+    "copy-js": "cpx \"*.js\" build/",
+    "copy-assets": "cpx \"assets/**/*\" build/assets/",
+    "copy-static": "cpx \"robots.txt\" build/",
+    "minify": "npm run minify-html && npm run minify-css && npm run minify-js",
+    "minify-html": "html-minifier --input-dir build --output-dir build --file-ext html --remove-comments --collapse-whitespace --minify-css --minify-js",
+    "minify-css": "cleancss -o build/styles.css build/styles.css",
+    "minify-js": "uglifyjs build/script.js -o build/script.js --compress --mangle",
+    "dev": "live-server --port=3000 --open=index.html",
+    "serve": "live-server build --port=8080",
+    "watch": "npm run build && npm run serve",
+    "preview": "npm run build && npm run serve",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "validate": "html-validate *.html",
+    "start": "npm run dev"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [
+    "static-website",
+    "portfolio",
+    "personal-website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Aymane Atigui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aymaneatigui/aymaneatigui.com.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "homepage": "https://aymaneatigui.com",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.4",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^3.0.1"
+    "cpx": "^1.5.0",
+    "rimraf": "^5.0.5",
+    "live-server": "^1.2.2",
+    "html-minifier": "^4.0.0",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "html-validate": "^8.9.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
