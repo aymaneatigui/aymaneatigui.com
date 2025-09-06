@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AWS for Frontend Engineers
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [00 - Introduction](content/00%20-%20Introduction.md)
+- [01 - The AWS Free Tier](content/01%20-%20The%20AWS%20Free%20Tier.md)
+- [02 - Account Set Up](content/02%20-%20Account%20Set%20Up.md)
+- [03 - Billing](content/03%20-%20Billing.md)
+- [04 - IAM](content/04%20-%20IAM.md)
+- [05 - S3](content/05%20-%20S3.md)
+- [06 - Registering a Domain Name](content/06%20-%20Registering%20a%20Domain%20Name.md)
+- [07 - S3 Policies](content/07%20-%20S3%20Policies.md)
+- [08 - AWS CLI](content/08%20-%20AWS%20CLI.md)
+- [09 - Route 53](content/09%20-%20Route%2053.md)
+- [10 - Routing](content/10%20-%20Routing.md)
+- [11 - CloudFront](content/11%20-%20CloudFront.md)
+- [12 - Using OAI](content/12%20-%20Using%20OAI.md)
+- [13 - Creating a Custom Cache Policy](content/13%20-%20Creating%20a%20Custom%20Cache%20Policy.md)
+- [14 - Build Pipeline](content/14%20-%20Build%20Pipeline.md)
+- [15 - Lambda@Edge](content/15%20-%20Lambda@Edge.md)
